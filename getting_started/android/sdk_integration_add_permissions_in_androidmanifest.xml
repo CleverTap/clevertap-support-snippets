@@ -1,0 +1,8 @@
+<!-- Required to retrieve a unique identifier for the device, see note below -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<!-- Required to allow the app to send events and user profile information -->
+<uses-permission android:name="android.permission.INTERNET"/>
+<!-- Recommended so that CleverTap detect network speeds -->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!-- Recommended so that app can get the user's primary e-mail address -->
+<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
