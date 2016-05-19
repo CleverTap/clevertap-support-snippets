@@ -1,0 +1,4 @@
+<meta-data
+    android:name="CLEVERTAP_NOTIFICATION_ICON"
+    android:value="ic_stat_red_star"/> <!-- name of your file in the drawable directory without the file extension. -->
+
