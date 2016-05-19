@@ -1,19 +1,3 @@
-// Manually Enable Push Notification support
-
-- (void) application:(UIApplication *)application
-    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-      [[CleverTap sharedInstance] setPushToken:deviceToken];
-  }
-
-// Include a call to handleNotificationWithData: when your app delegate is sent the messages
-
-application:didReceiveRemoteNotification:
-application:didReceiveLocalNotification:
-application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
-application:handleActionWithIdentifier:forLocalNotification:completionHandler:
-
-// like so:
-
 - (void) application:(UIApplication *)application
     didReceiveRemoteNotification:(NSDictionary *)userInfo {
       [[CleverTap sharedInstance] handleNotificationWithData:userInfo];
