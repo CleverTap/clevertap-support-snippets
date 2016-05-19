@@ -1,8 +1,6 @@
-public class HelloWorld {
-
-    public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
-    }
-
-}
+HashMap<String, Object> prodViewedAction = new HashMap<String, Object>();
+prodViewedAction.put("Product Name", "Casio Chronograph Watch");
+prodViewedAction.put("Category", "Mens Accessories");
+prodViewedAction.put("Price", 59.99);
+prodViewedAction.put("Currency", "USD");
+cleverTap.event.push("Product viewed", prodViewedAction);
