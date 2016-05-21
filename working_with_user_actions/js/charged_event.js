@@ -1,7 +1,7 @@
 clevertap.event.push("Charged",{
   "Amount": 300,
   "Payment mode": "Credit Card",
-  "Charged ID": 24052013,
+  "Charged ID": 24052013, // important to avoid duplicate transactions due to network failure
   "Items": [{
      "Category": "Books",
      "Book name": "The Millionaire next door",

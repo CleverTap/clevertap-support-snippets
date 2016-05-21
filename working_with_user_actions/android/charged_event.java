@@ -1,7 +1,7 @@
 HashMap<String, Object> chargeDetails = new HashMap<String, Object>();
 chargeDetails.put("Amount", 300);
 chargeDetails.put("Payment Mode", "Credit card");
-chargeDetails.put("Charged ID", 24052013);
+chargeDetails.put("Charged ID", 24052013); // important to avoid duplicate transactions due to network failure
 
 HashMap<String, Object> item1 = new HashMap<String, Object>();
 item1.put("Product category", "books");
