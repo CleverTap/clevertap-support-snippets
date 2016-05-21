@@ -1,0 +1,1 @@
+cleverTap.profile.pushFacebookUser(jsonObject);
