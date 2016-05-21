@@ -1,1 +1,0 @@
-CleverTapInstance.Profile.PushGraphUser(facebookUserJsonString);
