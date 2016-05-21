@@ -9,7 +9,7 @@ clevertap.profile.push({
    "Education": "Graduate", // Can be either School, College or Graduate
    "Married": "Y", // Can be either Y or N
    "DOB": $WZRK_WR.setDate(20150501), // Date of Birth. Format date as yyyymmdd
-   "Age": 67, // Not required if DOB is set
+   "Age": 28, // Not required if DOB is set
    "MSG-email": false, // Disable email notifications
    "MSG-push": true, // Enable push notifications
    "MSG-sms": true // Enable sms notifications
