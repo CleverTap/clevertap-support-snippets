@@ -3,11 +3,8 @@ FB.api('/me', function(userData) {
 });
 
 /**
- * Adding a call for additional permissions, for example, email, would be done like this:
+ * A call with additional permissions, for example - email, would look like this:
  * FB.api('/me', {fields: 'email'}, function(userData) {
  *  clevertap.profile.push({"Facebook": userData});
  * });
  */
- 
-
-
