@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CleverTap>
+
+  <AccountId> [YOUR ACCOUNT ID]</AccountId>
+  <AccountToken>[YOUR ACCOUNT TOKEN]</AccountToken>
+
+  <!-- Enable / Disable Push-Toast Notifications from WizRocket [Default-true]-->
+  <RegisterForToastNotifications>true</RegisterForToastNotifications>
+
+  <!-- Enable / Disable InApp Notifications from WizRocket [Default-true]-->
+  <EnableInAppNotifications>true</EnableInAppNotifications>
+
+  <!-- If Push Enabled, provide MPNS Channel Name [Default-WizRocket]-->
+  <ChannelName>WizRocket</ChannelName>
+
+  <!-- If Authenticated push enabled, provide Service Name, mandatory for authenticated push, leave blank for unauthenticated push-->
+  <ServiceName></ServiceName>
+
+  <!-- Enable / Disable personalization api from CleverTap [Default-false]-->
+  <EnablePersonalization>true</EnablePersonalization>
+
+  <!-- Enable / Disable sending Geo Location to CleverTap, enable ID_CAP_LOCATION Capability in WMAppManifest.cml [Default-true] -->
+  <EnableGeoLocation>true</EnableGeoLocation>
+
+  <!-- Enable / Disable Logging from CleverTap [Default-false]-->
+  <EnableLogging>true</EnableLogging>
+
+</CleverTap>
