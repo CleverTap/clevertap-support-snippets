@@ -1,18 +1,15 @@
 <Capabilities>
-  <!--
-  This permission is required to allow the CleverTap SDK to get a unique identifier for the device the app is running on
-  -->
+
+  <!-- This permission is required to allow the CleverTap SDK to get a unique identifier for the device the app is running on -->
   <Capability Name="ID_CAP_IDENTITY_DEVICE" />
-  <!--
-  This permission is required to allow the app to send events to CleverTap
-  -->
+
+  <!-- This permission is required to allow the app to send events to CleverTap -->
   <Capability Name="ID_CAP_NETWORKING" />
-  <!--
-  This permission is required to allow the CleverTap SDK to receive push notifications
-  -->
+
+  <!-- This permission is required to allow the CleverTap SDK to receive push notifications -->
   <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
-    <!--
-    This permission is required to allow the CleverTap SDK to receive display In App Notifications
-    -->
+
+  <!-- This permission is required to allow the CleverTap SDK to receive display In App Notifications -->
   <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+
 </Capabilities>
