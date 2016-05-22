@@ -1,0 +1,1 @@
+CleverTapAPI.setDebugLevel(1);
