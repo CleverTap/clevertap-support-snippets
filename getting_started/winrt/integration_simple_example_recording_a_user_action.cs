@@ -1,2 +1,2 @@
 CleverTapApi CleverTapInstance = CleverTapApi.GetInstance();
-CleverTapInstance.Event.Push("Video played");
+CleverTapInstance.Event.Push("Product Viewed");

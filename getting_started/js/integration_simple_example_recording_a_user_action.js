@@ -1,1 +1,1 @@
-clevertap.event.push("Video played");
+clevertap.event.push("Product Viewed");
