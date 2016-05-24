@@ -1,0 +1,39 @@
+{
+    "status": "success",
+    "previous_cursor": "ZyZjfwYEAgdjYmZyKz8NegYFAwxmamF/Z21meU4BBQFlYmN7ZG5ifAYCTQQrai57K2ouegJMARl6",
+    "next_cursor": "ZyZjfwYEAgdjYmZyKz8NegYFAwxmamF%2FZ21meU4BBQFlYmN7ZG5ifAYCTQQrai57K2ouegJMABl6",
+    "records": [
+        {
+            "profile": {
+                "objectId": "a8ffcbc9-a747-4ee3-a791-c5e58ad03097",
+                "platform": "Web",
+                "email": "peter@foo.com",
+                "profileData": {
+                    "favoriteColor": "blue"
+                },
+                "identity": "5555555555",
+                "id": 33
+            },
+            "ts": 20151023140416,
+            "event_props": {
+                "value": "pizza"
+            }
+        },
+        {
+            "profile": {
+                "objectId": "a8ffcbc9-a747-4ee3-a791-c5e58ad03097",
+                "platform": "Web",
+                "email": "peter@foo.com",
+                "profileData": {
+                    "favoriteColor": "blue"
+                },
+                "identity": "5555555555",
+                "id": 33
+            },
+            "ts": 20151024121636,
+            "event_props": {
+                "value": "pizza"
+            }
+        }
+    ]
+}

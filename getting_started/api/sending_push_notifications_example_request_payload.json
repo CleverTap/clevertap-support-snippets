@@ -1,0 +1,47 @@
+{
+    "name": "My API Campaign",
+    "estimate_only": true,
+    "segment": "all",
+    "where": {
+        "event_name": "App Launched",
+        "from": 20150101,
+        "to": 20150303,
+        "common_profile_prop": {
+            "profile_fields": [
+                {
+                    "Key": "Customer Type",
+                    "value": "Platinum"
+                }
+            ]
+        }
+    },
+    "content": {
+        "title": "Hi!",
+        "body": "How are you doing today?",
+        "platform_specific": {
+            "windows": {
+                "deep_link": "example.com",
+                "Key": "Value_windows"
+            },
+            "ios": {
+                "deep_link": "example.com",
+                "sound_file": "example.caf",
+                "category": "application category//Books",
+                "badge_count": 1,
+                "Key": "Value_ios"
+            },
+            "android": {
+                "background_image": "http://example.jpg",
+                "default_sound": true,
+                "deep_link": "example.com",
+                "Key": "Value_android"
+            }
+        }
+    },
+    "devices": [
+        "android",
+        "ios",
+        "windows"
+    ],
+    "when": "now"
+}
