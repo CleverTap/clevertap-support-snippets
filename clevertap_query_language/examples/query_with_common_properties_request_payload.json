@@ -1,0 +1,79 @@
+{
+    "event_name": "Charged",
+    "from": 20151010,
+    "to": 20151011,
+    "common_profile_properties": {
+        "app_fields": [
+            {
+                "name": "Make",
+                "operator": "contains",
+                "value": "Apple"
+            }
+        ],
+        "profile_fields": [
+            {
+                "name": "language",
+                "operator": "equals",
+                "value": "en"
+            }
+        ],
+        "demographics": [
+            {
+                "name": "Education",
+                "operator": "equals",
+                "value": [
+                    "College",
+                    "Graduate"
+                ]
+            },
+            {
+                "name": "Gender",
+                "value": "Female"
+            }
+        ],
+        "technographics": [
+            {
+                "name": "Device",
+                "operator": "equals",
+                "value": [
+                    "Mobile",
+                    "Tablet"
+                ]
+            },
+            {
+                "name": "Platform",
+                "value": "AndroidApp"
+            }
+        ],
+        "reachability": [
+            {
+                "name": "has_token",
+                "value": "True"
+            }
+        ],
+        "geo_fields": [
+            [
+                "India",
+                "Maharashtra",
+                "Mumbai"
+            ],
+            [
+                "United States",
+                "New York",
+                "New York City"
+            ]
+        ],
+        "geo_radius": [
+            [
+                35,
+                42.5,
+                5.2
+            ],
+            [
+                77.6,
+                76.2,
+                11
+            ]
+        ]
+    }
+}

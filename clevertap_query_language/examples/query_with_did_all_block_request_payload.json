@@ -1,0 +1,25 @@
+{
+    "advanced_query": {
+        "did_all": [
+            {
+                "event_name": "Charged",
+                "from": 20151010,
+                "to": 20151011,
+                "event_properties": [
+                    {
+                        "name": "Feedback",
+                        "operator": "contains",
+                        "value": "excellent"
+                    }
+                ]
+            },
+            {
+                "event_name": "App Launched",
+                "from": 20151011,
+                "to": 20151012,
+                "operator": "equals",
+                "value": 10
+            }
+        ]
+    }
+}

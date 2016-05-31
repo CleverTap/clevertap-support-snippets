@@ -1,0 +1,18 @@
+{
+    "event_name": "choseNewFavoriteFood",
+    "event_properties": [
+        {
+            "name": "value",
+            "operator": "contains",
+            "value": "pizza"
+        }
+    ],
+    "session_properties": [
+        {
+            "name": "first_time",
+            "value": "True"
+        }
+    ],
+    "from": 20150810,
+    "to": 20151025
+}
