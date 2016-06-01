@@ -1,0 +1,39 @@
+{
+      "d":[
+        {
+          "FBID":"34322423",
+          "ts":1419401442,
+          "type":"event",
+          "evtName":"Product viewed",
+          "evtData":{
+            "Product name":"Casio Chronograph Watch",
+            "Category":"Mens Watch",
+            "Price":59.99,
+            "Currency":"USD"
+          },
+        },
+        {
+          "identity":"jack@gmail.com",
+          "ts":1419411212,
+          "type":"event",
+          "evtName":"Charged",
+          "evtData":{
+            "Amount":300,
+            "Currency":"USD",
+            "Payment mode":"Credit Card",
+            "Items":[
+              {
+                "Category":"books",
+                "Book name":"The millionaire next door",
+                "Quantity":1
+              },
+              {
+                "Category":"books",
+                "Book name":"Achieving inner zen",
+                "Quantity":4
+              }
+            ]
+          },
+        },
+      ]
+    }

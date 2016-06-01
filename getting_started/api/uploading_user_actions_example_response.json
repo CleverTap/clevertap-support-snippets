@@ -1,0 +1,5 @@
+{
+    "status":<success, partial, fail>, 
+    "processed":<count>, 
+    "unprocessed": [{"status":"fail", "code":<error code>, "error":<error msg>, "record":<record>}]
+}
