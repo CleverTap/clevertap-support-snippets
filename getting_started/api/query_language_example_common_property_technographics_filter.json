@@ -1,0 +1,16 @@
+"common_profile_properties": {
+technographics": [
+            {
+                "name": "Device",
+                "operator": "equals",
+                "value": [
+                    "Mobile",
+                    "Tablet"
+                ]
+            },
+            {
+                "name": "Platform",
+                "value": "AndroidApp"
+            }
+        ]
+}

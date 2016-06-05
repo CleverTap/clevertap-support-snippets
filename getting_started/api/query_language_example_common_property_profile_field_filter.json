@@ -1,0 +1,9 @@
+"common_profile_properties": {
+"profile_fields": [
+            {
+                "name": "language",
+                "operator": "equals",
+                "value": "en"
+            }
+        ]
+}

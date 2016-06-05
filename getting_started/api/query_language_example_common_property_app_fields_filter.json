@@ -1,0 +1,9 @@
+"common_profile_properties": {
+"app_fields": [
+            {
+                "name": "Make",
+                "operator": "contains",
+                "value": "Apple"
+            }
+        ]
+}

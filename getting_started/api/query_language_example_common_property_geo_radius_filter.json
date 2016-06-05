@@ -1,0 +1,14 @@
+"common_profile_properties": {
+"geo_radius": [
+            [
+                35,
+                42.5,
+                5.2
+            ],
+            [
+                77.6,
+                76.2,
+                11
+            ]
+        ]
+}

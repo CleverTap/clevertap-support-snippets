@@ -1,0 +1,16 @@
+"common_profile_properties": {
+ "demographics": [
+            {
+                "name": "Education",
+                "operator": "equals",
+                "value": [
+                    "College",
+                    "Graduate"
+                ]
+            },
+            {
+                "name": "Gender",
+                "value": "Female"
+            }
+        ]
+}
