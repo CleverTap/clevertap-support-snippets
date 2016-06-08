@@ -3,7 +3,12 @@ HashMap<String, Object> prodViewedAction = new HashMap<String, Object>();
 prodViewedAction.put("Product Name", "Casio Chronograph Watch");
 prodViewedAction.put("Category", "Mens Accessories");
 prodViewedAction.put("Price", 59.99);
+prodViewedAction.put("In Stock", Boolean.TRUE);
+prodViewedAction.put("Offer Expiry", new Date());
+
+
 cleverTap.event.push("Product viewed", prodViewedAction);
+
 
 /**
  * Data types
