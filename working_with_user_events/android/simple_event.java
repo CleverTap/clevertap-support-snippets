@@ -1,1 +1,2 @@
-cleverTap.event.push("Video played");
+// event without properties
+cleverTap.event.push("Product viewed");

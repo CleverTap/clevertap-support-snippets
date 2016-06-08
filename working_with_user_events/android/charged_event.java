@@ -24,8 +24,8 @@ items.add(item2);
 items.add(item3);
 
 try {
-  cleverTap.event.push(CleverTapAPI.CHARGED_EVENT, chargeDetails, items);
+    cleverTap.event.push(CleverTapAPI.CHARGED_EVENT, chargeDetails, items);
 } catch (InvalidEventNameException e) {
-  // You have to specify the first parameter to push()
-  // as CleverTapAPI.CHARGED_EVENT
+    // You have to specify the first parameter to push()
+    // as CleverTapAPI.CHARGED_EVENT
 }

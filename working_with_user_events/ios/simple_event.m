@@ -1,1 +1,2 @@
-[[CleverTap sharedInstance] recordEvent:@"Video played"];
+// event without properties
+[[CleverTap sharedInstance] recordEvent:@"Product viewed"];

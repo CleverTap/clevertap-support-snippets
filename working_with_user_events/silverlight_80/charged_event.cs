@@ -1,4 +1,4 @@
-Dictionary<string, object> chargeDetails = new Dictionary<string,object>();
+Dictionary<string, object> chargeDetails = new Dictionary<string, object>();
 chargeDetails.Add("Amount", 300);
 chargeDetails.Add("Currency", "USD");
 chargeDetails.Add("Payment mode", "Credit card");
@@ -20,8 +20,8 @@ item3.Add("Book name","Chuck it, let's do it");
 item3.Add("Quantity", 5);
 
 List<Dictionary<string, object>> items = new List<Dictionary<string, object>>();
-items.add(item1);
-items.add(item2);
-items.add(item3);
-CleverTapApi CleverTapInstance = CleverTapApi.GetInstance();
+items.Add(item1);
+items.Add(item2);
+items.Add(item3);
+
 CleverTapInstance.Event.PushCharged(chargeDetails, items);
