@@ -3,12 +3,8 @@ HashMap<String, Object> prodViewedAction = new HashMap<String, Object>();
 prodViewedAction.put("Product Name", "Casio Chronograph Watch");
 prodViewedAction.put("Category", "Mens Accessories");
 prodViewedAction.put("Price", 59.99);
-prodViewedAction.put("In Stock", Boolean.TRUE);
-prodViewedAction.put("Offer Expiry", new Date());
-
 
 cleverTap.event.push("Product viewed", prodViewedAction);
-
 
 /**
  * Data types
@@ -21,4 +17,3 @@ cleverTap.event.push("Product viewed", prodViewedAction);
  * For e.g. if you are recording the time of the flight as an event property,
  * you can send a message to the user just before their flight takes off.
  */
-
