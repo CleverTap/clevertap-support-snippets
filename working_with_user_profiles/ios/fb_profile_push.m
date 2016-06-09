@@ -1,8 +1,7 @@
-[FBRequestConnection startWithGraphPath:@"me?
-    fields=id,name,email,birthday, gender,education,work"
-    completionHandler:^(FBRequestConnection *connection, id
-    result, NSError *error) {
-      if (!error) {
-        [[CleverTap sharedInstance] profilePushGraphUser:result];
-      }
-    }];
+[[[FBSDKGraphRequest alloc] initWithGraphPath:@"me?fields=id,name,email,birthday,gender,education,work"
+                                   parameters:nil]
+ startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+     if (result) {
+         [[CleverTap push] graphUser:result];
+     }
+ }];
