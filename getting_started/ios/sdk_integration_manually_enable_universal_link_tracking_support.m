@@ -1,5 +1,3 @@
-// Manually enable Universal link tracking
-
 - (BOOL) application:(UIApplication *)application
     openURL:(NSURL *)url
     sourceApplication:(NSString *)sourceApplication
