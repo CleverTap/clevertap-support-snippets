@@ -1,0 +1,6 @@
+// To enable this feature, send the enablePersonalization message to the CleverTap SDK (preferably in your AppDelegate):
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject:AnyObject]?) -> Bool {
+    ...
+    CleverTap.enablePersonalization()
+    ...
+}

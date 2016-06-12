@@ -1,0 +1,1 @@
+CleverTap.setDebugLevel(1)
