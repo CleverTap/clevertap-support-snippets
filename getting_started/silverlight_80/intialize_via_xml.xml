@@ -10,10 +10,11 @@
   <!-- Enable / Disable InApp Notifications from WizRocket [Default-true]-->
   <EnableInAppNotifications>true</EnableInAppNotifications>
 
-  <!-- If Push Enabled, provide MPNS Channel Name [Default-WizRocket]-->
+  <!-- If Push Enabled, provide MPNS Channel Name [Default-WizRocket]. Channel Name not required for WNS -->
   <ChannelName>WizRocket</ChannelName>
 
-  <!-- If Authenticated push enabled, provide Service Name, mandatory for authenticated push, leave blank for unauthenticated push-->
+  <!-- If Authenticated push enabled, provide Service Name, mandatory for authenticated push, leave blank for unauthenticated push. 
+       Service Name not required for WNS-->
   <ServiceName></ServiceName>
 
   <!-- Enable / Disable personalization api from CleverTap [Default-false]-->
