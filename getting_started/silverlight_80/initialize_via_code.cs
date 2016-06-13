@@ -1,4 +1,4 @@
-CleverTapConfig config = new CleverTapConfig(<AcountId>,<AccountToken>);
+CleverTapConfig config = new CleverTapConfig("Your CleverTap Account ID","Your CleverTap Account Token");
 
 /* Enable / Disable Push-Toast Notifications from WizRocket [Default-true]*/
 config.RegisterForToastNotifications = true;
