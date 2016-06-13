@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CleverTap>
 
-  <AccountId>CLEVERTAP_ACCOUNT_ID</AccountId>
-  <AccountToken>CLEVERTAP_TOKEN</AccountToken>
+  <AccountId>Your CleverTap Account ID</AccountId>
+  <AccountToken>Your CleverTap Account Token</AccountToken>
 
   <!-- Enable / Disable Push-Toast Notifications from WizRocket [Default-true]-->
   <RegisterForToastNotifications>true</RegisterForToastNotifications>
