@@ -1,0 +1,23 @@
+{
+    "status": "success",
+    "record": {
+        "email": "saifali9690@gmail.com",
+        "profileData": {
+            "Last Score": 308,
+            "High Score": 308,
+            "Replayed": true
+        },
+        "events": {
+            "App Launched": {
+                "count": 10,
+                "first_seen": 1457271567,
+                "last_seen": 1458041215
+            },
+            "Charged": {
+                "count": 6,
+                "first_seen": 1457962417,
+                "last_seen": 1458041276
+            }
+        }
+    }
+}

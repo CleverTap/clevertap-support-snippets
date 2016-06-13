@@ -1,7 +1,6 @@
 func application(application: UIApplication, didReceiveRemoteNotification
     userInfo: [NSObject : AnyObject]) {
     CleverTap.sharedInstance()?.handleNotificationWithData(userInfo)
-
 }
 
 func application(application: UIApplication, didReceiveLocalNotification
