@@ -1,0 +1,18 @@
+{ 
+    "status" : "success" , 
+    "previous_cursor" : "ZiZiNwMEBQBkaWZzY2MuO20BBQFlYmN7ZG5hewYBTQVjb2BzZmphfwEABQUra2Jmeg==" , 
+    "next_cursor" : "ZiZjNwMEBQBkaWZzY2MuO20BBQFlYmN7ZG5hewYBTQVjb2BzZmphfwEABQUra2Jmeg%3D%3D" , 
+    "records" : [ 
+        { 
+            "push_token" : "95f98af6ad9a5e714a56c5bf527a78cb1e3eda18d2f23bc8591437d0d8ae71a3" , 
+            "identity" : "5555555555" , 
+            "profileData": {"favoriteFood": "pizza"},
+            "platformInfo" : [ 
+                { "platform" : "iOS" , 
+                  "objectId" : "-1a063854f83a4c6484285039ecff87cb"} , 
+                { "platform" : "Web" , 
+                  "objectId" : "a8ffcbc9-a747-4ee3-a791-c5e58ad03097"}
+            ]
+        }
+    ]
+}
