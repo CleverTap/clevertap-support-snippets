@@ -1,6 +1,6 @@
 {
     "event_name": "choseNewFavoriteFood",
-    "props": [
+    "event_properties": [
         {
             "name": "value",
             "operator": "contains",
