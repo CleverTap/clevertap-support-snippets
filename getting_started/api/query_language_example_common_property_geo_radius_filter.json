@@ -1,5 +1,6 @@
-"common_profile_properties": {
-"geo_radius": [
+{
+    "common_profile_properties": {
+        "geo_radius": [
             [
                 35,
                 42.5,
@@ -11,4 +12,5 @@
                 11
             ]
         ]
+    }
 }
