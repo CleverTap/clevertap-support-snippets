@@ -1,5 +1,6 @@
-"common_profile_properties": {
- "demographics": [
+{
+    "common_profile_properties": {
+        "demographics": [
             {
                 "name": "Education",
                 "operator": "equals",
@@ -13,4 +14,5 @@
                 "value": "Female"
             }
         ]
+    }
 }
