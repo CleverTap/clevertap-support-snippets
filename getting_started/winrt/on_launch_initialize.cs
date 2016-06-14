@@ -1,7 +1,6 @@
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
-  CleverTapApi CleverTapInstance = CleverTapApi.Init(CleverTapAccountId,
-  CleverTapToken, e.Arguments); // e.Arguments is needed to record UTM parameters from which the application was launched.
+  CleverTapApi CleverTapInstance = CleverTapApi.Init("Your CleverTap Account ID","Your CleverTap Account Token", e.Arguments);
 }
 
 // You can save the above instance as a static variable in App.xaml.cs, for it to be
