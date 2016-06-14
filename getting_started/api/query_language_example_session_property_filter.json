@@ -4,8 +4,15 @@
         {
             "name": "first_time",
             "value": "True"
+        },
+        {
+            "name": "time_of_day",
+            "value": [
+                "22:30",
+                "22:35"
+            ]
         }
-     ],
+    ],
     "from": 20150810,
     "to": 20151025
 }
