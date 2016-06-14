@@ -10,5 +10,4 @@ profileUpdate.Add(CleverTapSDK.CleverTapProfile.Age, 28); // Not required if DOB
 profileUpdate.Add(CleverTapSDK.CleverTapProfile.MSG-email, false); // Disable email notifications
 profileUpdate.Add(CleverTapSDK.CleverTapProfile.MSG-push, true); // Enable push notifications
 profileUpdate.Add(CleverTapSDK.CleverTapProfile.MSG-sms, false); // Disable SMS notifications
-CleverTapApi CleverTapInstance = CleverTapApi.GetInstance();
 CleverTapInstance.Profile.Push(profileUpdate);
