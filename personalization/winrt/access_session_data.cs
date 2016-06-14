@@ -1,15 +1,11 @@
 // Time elapsed in current session
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Session.GetTimeElapsed();
+CleverTapInstance.Session.GetTimeElapsed();
 
 //Total number of times user has opened the app
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Session.GetTotalVisits();
+CleverTapInstance.Session.GetTotalVisits();
 
 // Number of pages browsed in the current session
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Session.GetPageCount();
+CleverTapInstance.Session.GetPageCount();
 
 // Time of previous visit
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Session.GetPreviousVisitTime();
+CleverTapInstance.Session.GetPreviousVisitTime();
