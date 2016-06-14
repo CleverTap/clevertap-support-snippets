@@ -1,5 +1,6 @@
-"common_profile_properties": {
-"geo_fields": [
+{
+    "common_profile_properties": {
+        "geo_fields": [
             [
                 "India",
                 "Maharashtra",
@@ -11,4 +12,5 @@
                 "New York City"
             ]
         ]
+    }
 }
