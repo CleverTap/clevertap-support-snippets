@@ -1,11 +1,8 @@
 // First time the event occurred
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Event.GetFirstTime(string eventName);
+CleverTapInstance.Event.GetFirstTime("Charged");
 
 //Last time the event occurred
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Event.GetLastTime(string eventName);
+CleverTapInstance.Event.GetLastTime("Charged");
 
 //Number of times event occurred previously
-CleverTapApi CleverTapConfig = CleverTapApi.GetInstance();
-CleverTapConfig.Event.GetOccurences(string eventName);
+CleverTapInstance.Event.GetOccurences("Charged");

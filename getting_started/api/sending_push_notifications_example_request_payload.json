@@ -1,12 +1,11 @@
 {
     "name": "My API Campaign",
     "estimate_only": true,
-    "segment": "all",
     "where": {
         "event_name": "App Launched",
         "from": 20150101,
         "to": 20150303,
-        "common_profile_prop": {
+        "common_profile_properties": {
             "profile_fields": [
                 {
                     "Key": "Customer Type",

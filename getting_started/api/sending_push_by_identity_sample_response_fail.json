@@ -1,0 +1,5 @@
+{
+    "status": "fail",
+    "error": "<error message here>",
+    "code": <error code here>
+}
