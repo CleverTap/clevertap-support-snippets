@@ -1,0 +1,1 @@
+CleverTapApi CleverTapInstance = CleverTapApi.GetInstance();
