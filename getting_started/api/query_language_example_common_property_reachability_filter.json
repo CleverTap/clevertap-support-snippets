@@ -1,8 +1,10 @@
-"common_profile_properties": {
-"reachability": [
+{
+    "common_profile_properties": {
+        "reachability": [
             {
                 "name": "has_token",
                 "value": "True"
             }
         ]
+    }
 }
