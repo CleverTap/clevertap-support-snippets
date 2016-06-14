@@ -1,8 +1,8 @@
 // First time the event occurred
-CleverTapInstance.Event.GetFirstTime(string eventName);
+CleverTapInstance.Event.GetFirstTime(eventName);
 
 //Last time the event occurred
-CleverTapInstance.Event.GetLastTime(string eventName);
+CleverTapInstance.Event.GetLastTime(eventName);
 
 //Number of times event occurred previously
-CleverTapInstance.Event.GetOccurences(string eventName);
+CleverTapInstance.Event.GetOccurences(eventName);
