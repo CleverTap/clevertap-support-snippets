@@ -1,0 +1,61 @@
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css" />
+<div class="container">
+<h1>Namste, <span contenteditable="false"><span id="undefined"><span data-str="@Name-profile@-1">profile - Name <input class="default_value_text_box" data-originalreplacement="$replacement$##n:[ add your default value here ]$/replacement$" data-special-attr="@Name-profile@-1" data-special-token="##n" placeholder="Default value" style="border: none;  text-align: center;;" type="text" value="User" /></span><span style="display:none">----@Name-profile@-1</span></span><span contenteditable="false"> </span></span>.</h1>
+
+<h3>The next big thing is here with CleverTap!</h3>
+
+<p>Prepare for brand new experience of In-App notifications.</p>
+
+<p>We have many templates to choose from and all come with unlimited possiblities of design.</p>
+<img src="https://media.giphy.com/media/JVdF14CQQH7gs/giphy.gif" width="120px/" />
+<p>Did we mention that this cool template is designed with <span style="color: #c0392b "> :heart:</span> from CleverTap?</p>
+<a class="button" href="https://twitter.com/intent/tweet?hashtags=CleverTap&amp;original_referer=%22beardedrobot%22&amp;text=We%20loved%20your%20new%20in-app%20notifications.%20Looking%20forward%20to%20use%20it.%20@clevertap">Shout on Twitter</a> <a class="button" href="mailto:support@clevertap.com?subject=Loved your new In-app&amp;body=Hi,Your In-app is amazing. Share something cool about our In-app notifications.">Shoot an Email</a> </div>
+<style type="text/css">*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body, html {
+font-family: 'Nunito', sans-serif;
+color: #384047  ;
+height: 400px;
+}
+
+.container {
+max-width: 300px;
+margin: 10px auto;
+padding: 10px 20px;
+background: #f4f7f8  ;
+border-radius: 8px;
+min-height: 200px;
+ text-align: center;
+}
+
+h1 {
+margin: 0 0 20px 0;
+ font-size: 22px;
+text-align: center;
+}
+
+.button {
+padding: 10px;
+color: #FFF;
+display: inline-block;
+background-color: #4bc970  ;
+font-size: 14px;
+text-align: center;
+font-style: normal;
+border-radius: 5px;
+width: 120px;
+border: 1px solid #3ac162  ;
+border-width: 1px 1px 3px;
+box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+margin-bottom: 10px;
+ text-decoration: none;
+}
+
+img {
+border-radius: 5px;
+}
+</style>
