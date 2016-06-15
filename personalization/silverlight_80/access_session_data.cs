@@ -9,4 +9,3 @@ CleverTapInstance.Session.GetPageCount();
 
 // Time of previous visit
 CleverTapInstance.Session.GetPreviousVisitTime();
-
