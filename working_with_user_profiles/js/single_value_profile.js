@@ -1,7 +1,7 @@
 clevertap.profile.push({
  "Site": {
    "Customer Type": "Silver",
-   "Prefered Language": "English",
+   "Prefered Language": "English"
  }
 });
 
@@ -12,7 +12,4 @@ clevertap.profile.push({
  *
  * Date object
  * When a property value is of type Date, the date and time are both recorded to the second.
- * This can be later used for targeting scenarios.
- * For e.g. if you are recording the time of the flight as an event property,
- * you can send a message to the user just before their flight takes off.
  */

@@ -11,7 +11,4 @@ CleverTapInstance.Profile.Push(profileUpdate);
  *
  * Date object
  * When you pass the value of the property as DateTime, the date and time are both recorded to the second.
- * This can be later used for targeting scenarios.
- * For e.g. if you are recording the time of the flight as an event property,
- * you can send a message to the user just before their flight takes off.
  */
