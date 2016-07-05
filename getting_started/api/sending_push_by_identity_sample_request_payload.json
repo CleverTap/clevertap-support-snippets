@@ -39,6 +39,7 @@
                 "background_image": "http://example.jpg",
                 "default_sound": true,
                 "deep_link": "example.com",
+                "large_icon": "http://example.png",
                 "key": "value_android"
             }
         }
