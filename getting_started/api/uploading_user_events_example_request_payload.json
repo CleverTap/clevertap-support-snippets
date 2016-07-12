@@ -2,7 +2,7 @@
     "d": [
         {
             "FBID": "34322423",
-            "ts": 1419401442,
+            "ts": 1468308340, // time when the event occurred
             "type": "event",
             "evtName": "Product viewed",
             "evtData": {
@@ -14,7 +14,7 @@
         },
         {
             "identity": "jack@gmail.com",
-            "ts": 1419411212,
+            "ts": 1468208340, // time when the event occurred
             "type": "event",
             "evtName": "Charged",
             "evtData": {

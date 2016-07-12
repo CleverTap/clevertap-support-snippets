@@ -1,20 +1,20 @@
 {
-      "d":[
-        {
-          "identity":"1189549",
-          "ts":1419421212,
-          "type":"profile",
-          "profileData":{
-            "Name":"Jack Montana",
-            "Email":"jack@gmail.com",
-            "Phone":"+14155551234",
-            "Gender":"M",
-            "Employed":"Y",
-            "Education":"Graduate",
-            "Married":"Y",
-            "Age":28,
-            "Customer Type":"Platinum"
-          }
-        }
-      ]
+  "d": [
+    {
+      "identity": "1189549",  // customer ID, email or any other ID that uniquely identifies your user
+      "ts": 1468308340,       // user creation date, or just leave this field out to set the time has current
+      "type": "profile",
+      "profileData": {
+        "Name": "Jack Montana",
+        "Email": "jack@gmail.com",
+        "Phone": "+14155551234",
+        "Gender": "M",
+        "Employed": "Y",
+        "Education": "Graduate",
+        "Married": "Y",
+        "Age": 28,
+        "Customer Type": "Platinum"
+      }
     }
+  ]
+}
