@@ -1,4 +1,5 @@
-// each of the below mentioned fields are optional with the exception of one of Identity, Email, FBID or GPID
+// each of the below mentioned fields are optional
+//with the exception of one of Identity, Email, FBID or GPID
 let dob = NSDateComponents()
 dob.day = 24
 dob.month = 5

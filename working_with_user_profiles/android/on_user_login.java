@@ -1,4 +1,5 @@
-// each of the below mentioned fields are optional with the exception of one of Identity, Email, FBID or GPID
+// each of the below mentioned fields are optional
+// with the exception of one of Identity, Email, FBID or GPID
 HashMap<String, Object> profileUpdate = new HashMap<String, Object>();
 profileUpdate.put("Name", "Jack Montana");    // String
 profileUpdate.put("Identity", 61026032);      // String or number
