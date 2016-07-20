@@ -1,10 +1,5 @@
 // each of the below mentioned fields are optional 
 // with the exception of one of Identity, Email, FBID or GPID
-NSDateComponents *dob = [[NSDateComponents alloc] init];
-dob.day = 24;
-dob.month = 5;
-dob.year = 1992;
-NSDate *d = [[NSCalendar currentCalendar] dateFromComponents:dob];
 NSDictionary *profile = @{
     @"Name": @"Jack Montana",       // String
     @"Identity": @61026032,         // String or number
@@ -14,8 +9,7 @@ NSDictionary *profile = @{
     @"Employed": @"Y",              // Can be either Y or N
     @"Education": @"Graduate",      // Can be either Graduate, College or School
     @"Married": @"Y",               // Can be either Y or N
-    @"DOB": d,                      // Date of Birth. An NSDate object
-    @"Age": @28,                    // Not required if DOB is set
+    @"Age": @28,                    
 
 // optional fields. controls whether the user will be sent email, push etc.
     @"MSG-email": @NO,              // Disable email notifications
