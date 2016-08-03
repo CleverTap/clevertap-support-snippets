@@ -10,7 +10,7 @@ clevertap.profile.push({
    "Employed": "Y",                   // Can be either Y or N
    "Education": "Graduate",           // Can be either School, College or Graduate
    "Married": "Y",                    // Can be either Y or N
-   "DOB": $WZRK_WR.setDate(20150501), // Date of Birth. Format date as yyyymmdd
+   "DOB": new Date(), // Date of Birth. Javascript Date object
    "Age": 28,                         // Not required if DOB is set
 
 // optional fields. controls whether the user will be sent email, push etc.
