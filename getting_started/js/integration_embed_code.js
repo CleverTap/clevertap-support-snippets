@@ -1,7 +1,7 @@
 // Copy and paste the below code snippet inside the <head></head> section of your website
 
 <script type="text/javascript">
- var clevertap = {event:[], profile:[], account:[]};
+ var clevertap = {event:[], profile:[], account:[], notifications:[]};
  // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
  clevertap.account.push({"id": "CLEVERTAP_ACCOUNT_ID"});
  (function () {
