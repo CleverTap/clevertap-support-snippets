@@ -12,6 +12,7 @@ clevertap.profile.push({
    "Married": "Y",                    // Can be either Y or N
    "DOB": new Date(), // Date of Birth. Javascript Date object
    "Age": 28,                         // Not required if DOB is set
+   "Photo": 'www.foobar.com/image.jpeg',    // URL to the Image
 
 // optional fields. controls whether the user will be sent email, push etc.
    "MSG-email": false,                // Disable email notifications
