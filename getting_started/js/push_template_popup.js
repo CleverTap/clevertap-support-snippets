@@ -1,6 +1,6 @@
-clevertap.notifications.push(
-    popupTitle,
-    popupBody,
-    acceptButtonText,
-    rejectButtonText,
-    acceptButtonColorInHex);
+clevertap.notifications.push({
+    "titleText":popupTitleText,
+    "bodyText":popupBodyText,
+    "okButtonText":okButtonText,
+    "rejectButtonText":rejectButtonText,
+    "okButtonColor":okButtonColorInHex});
