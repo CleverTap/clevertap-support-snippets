@@ -1,5 +1,6 @@
 <uses-permission
     android:name="com.google.android.c2dm.permission.RECEIVE"/>
+<uses-permission android:name="android.permission.WAKE_LOCK" /> // if using CleverTap SDK v3.0.0+
 <permission
     android:name="com.your.package.permission.C2D_MESSAGE"
     android:protectionLevel="signature"/>

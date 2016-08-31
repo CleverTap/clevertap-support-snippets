@@ -1,0 +1,13 @@
+<service
+    android:name="com.clevertap.android.sdk.FcmTokenListenerService">
+    <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+    </intent-filter>
+</service>
+
+<service
+    android:name="com.clevertap.android.sdk.FcmMessageListenerService">
+    <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+    </intent-filter>
+</service>

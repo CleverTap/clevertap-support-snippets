@@ -1,6 +1,10 @@
 <!-- replace below value with your GCM project number. Separate multiple sender IDs with a comma -->
 <meta-data android:name="GCM_SENDER_ID" android:value="id:1234567890"/> 
 
+<meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version"/>
+
 <receiver
     android:name="com.clevertap.android.sdk.GcmBroadcastReceiver"
     android:permission="com.google.android.c2dm.permission.SEND">
@@ -12,8 +16,4 @@
         <category android:name="com.your.package"/>
     </intent-filter>
 </receiver>
-
-<meta-data
-    android:name="com.google.android.gms.version"
-    android:value="@integer/google_play_services_version"/>
 
