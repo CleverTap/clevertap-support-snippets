@@ -1,5 +1,5 @@
 dependencies {
-    compile 'com.clevertap.android:clevertap-android-sdk:2.2.0'
+    compile 'com.clevertap.android:clevertap-android-sdk:3.0.0'
     compile 'com.google.android.gms:play-services-gcm:9.0.2'
     compile 'com.android.support:support-v4:23.1.1'
 }
