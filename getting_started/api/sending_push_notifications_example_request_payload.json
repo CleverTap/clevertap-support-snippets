@@ -23,6 +23,7 @@
                 "Key": "Value_windows"
             },
             "ios": {
+                "mutable-content": "true", 
                 "deep_link": "example.com",
                 "sound_file": "example.caf",
                 "category": "application category//Books",
