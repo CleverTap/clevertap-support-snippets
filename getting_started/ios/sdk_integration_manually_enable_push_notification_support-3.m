@@ -19,3 +19,9 @@
         [[CleverTap sharedInstance] handleNotificationWithData:userInfo];
         if (completionHandler) completionHandler();
 }
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo 
+fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+	[[CleverTap sharedInstance] handleNotificationWithData:userInfo];
+    completionHandler(UIBackgroundFetchResultNoData);
+}

@@ -20,3 +20,9 @@ func application(application: UIApplication, handleActionWithIdentifier identifi
     CleverTap.sharedInstance()?.handleNotificationWithData(userInfo)
     completionHandler()
 }
+
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], 
+fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+	CleverTap.sharedInstance()?.handleNotification(withData: userInfo)
+    completionHandler(.noData)
+}

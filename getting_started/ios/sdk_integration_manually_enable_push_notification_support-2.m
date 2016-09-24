@@ -1,4 +1,5 @@
 application:didReceiveRemoteNotification:
 application:didReceiveLocalNotification:
+application:didReceiveRemoteNotification:fetchCompletionHandler:
 application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
 application:handleActionWithIdentifier:forLocalNotification:completionHandler:
