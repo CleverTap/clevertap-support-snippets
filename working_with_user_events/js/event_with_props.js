@@ -3,7 +3,7 @@ clevertap.event.push("Product viewed", {
     "Product name": "Casio Chronograph Watch",
     "Category": "Mens Accessories",
     "Price": 59.99,
-    "Date": "$D_1476084698"
+    "Date": "$D_1476084699"
 });
 
 /**
