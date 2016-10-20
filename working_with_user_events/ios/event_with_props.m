@@ -2,7 +2,8 @@
 NSDictionary *props = @{
     @"Product name": @"Casio Chronograph Watch",
     @"Category": @"Mens Accessories",
-    @"Price": @59.99
+    @"Price": @59.99,
+    @"Date": [NSDate date]
 };
 
 [[CleverTap sharedInstance] recordEvent:@"Product viewed" withProps:props];
