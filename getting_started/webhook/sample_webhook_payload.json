@@ -1,5 +1,9 @@
 {
     "targetId": 1472124953,
+    "key_values": {
+                    "PromoCode": "MT50",
+                    "PowerUser": "true"
+                },
     "profiles": [
         {
             "email": "jack@gmail.com",
