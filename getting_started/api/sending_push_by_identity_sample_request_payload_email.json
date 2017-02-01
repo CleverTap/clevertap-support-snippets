@@ -1,0 +1,27 @@
+{
+    "to": {
+        "FBID": [
+            "102029292929388",
+            "114342342453463"
+        ],
+        "GPID": [
+            "1928288389299292"
+        ],
+        "Email": [
+            "john@doe.com",
+            "jane@doe.com"
+        ],
+        "Identity": [
+            "JohnDoe"
+        ],
+        "objectId": [
+            "_asdnkansdjknaskdjnasjkndja",
+            "-adffajjdfoaiaefiohnefwprjf"
+        ]
+    },
+    "respect_frequency_caps": false,
+    "content": {
+        "subject": "Welcome",
+        "body": "<div>Your HTML content for the email</div>"
+    }
+}
