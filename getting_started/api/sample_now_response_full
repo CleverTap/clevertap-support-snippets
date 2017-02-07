@@ -1,0 +1,69 @@
+{
+  "status": "success",
+  "count": 214,
+  "user_type": {
+    "new": 58,
+    "repeat": 25,
+    "addressable": 38,
+    "customer": 93
+  },
+  "session_source": {
+    "direct": 122,
+    "others": 115,
+    "search": 18,
+    "social": 2,
+    "email": 1,
+    "unavailable": 4
+  },
+  "browser": {
+    "others": 4,
+    "firefox": 2,
+    "chrome": 52,
+    "ie": 3,
+    "mobileapp": 201
+  },
+  "os": {
+    "others": 2,
+    "android": 196,
+    "ios": 35,
+    "windows": 25,
+    "mac": 3,
+    "linux": 2
+  },
+  "device": {
+    "desktop": 32,
+    "mobile": 230,
+    "tablet": 1
+  },
+  "new": {
+    "session_source": {
+      "direct": 18,
+      "others": 50,
+      "search": 12,
+      "social": 2,
+      "email": 1,
+      "unavailable": 3
+    },
+    "browser": {
+      "others": 1,
+      "firefox": 0,
+      "chrome": 36,
+      "ie": 3,
+      "mobileapp": 47
+    },
+    "os": {
+      "others": 0,
+      "android": 67,
+      "ios": 2,
+      "windows": 15,
+      "mac": 2,
+      "linux": 1
+    },
+    "device": {
+      "desktop": 18,
+      "mobile": 68,
+      "tablet": 1
+    }
+  },
+  "backlog": false
+}
