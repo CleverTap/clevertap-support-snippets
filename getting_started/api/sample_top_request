@@ -1,0 +1,17 @@
+{
+	"event_name": "Charged",
+	"from": 20161229,
+	"to": 20170129,
+	"groups": {
+		"foo": {
+			"property_type": "event_properties",
+			"name": "Amount",
+			"top_n": 5,
+			"order": "desc"
+		},
+		"bar": {
+			"property_type": "profile_fields",
+			"name": "Customer Type"
+		}
+	}
+}
