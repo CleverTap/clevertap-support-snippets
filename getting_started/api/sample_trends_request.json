@@ -1,7 +1,7 @@
 {
 	"event_name": "UTM Visited",
-	"from": 20161218,
-	"to": 20170114,
+	"from": 20161224,
+	"to": 20170103,
 	"unique": false,
 	"groups": {
 		"foo": {
