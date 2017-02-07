@@ -1,0 +1,8 @@
+{
+	"user_type": true,
+	"session_source": true,
+	"browser": true,
+	"os": true,
+	"device": true,
+	"new": true
+}
