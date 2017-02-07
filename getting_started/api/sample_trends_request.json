@@ -1,0 +1,17 @@
+{
+	"event_name": "UTM Visited",
+	"from": 20161218,
+	"to": 20170114,
+	"unique": false,
+	"groups": {
+		"foo": {
+			"trend_type": "daily"
+		},
+		"bar": {
+			"trend_type": "weekly"
+		},
+		"foobar": {
+			"trend_type": "monthly"
+		}
+	}
+}
