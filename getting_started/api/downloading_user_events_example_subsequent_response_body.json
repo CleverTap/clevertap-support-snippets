@@ -17,6 +17,12 @@
             "ts": 20151023140416,
             "event_props": {
                 "value": "pizza"
+            },
+            "session_props": {
+                "utm_source": "Foo",
+                "utm_medium": "Bar",
+                "utm_campaign": "FooBar",
+                "session_source": "Direct"
             }
         },
         {
@@ -33,6 +39,10 @@
             "ts": 20151024121636,
             "event_props": {
                 "value": "pizza"
+            },
+            "session_props": {
+                "session_source": "Others",
+                "session_referrer": "http://example.com"
             }
         }
     ]
