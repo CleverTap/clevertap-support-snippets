@@ -14,7 +14,7 @@
                 "identity": "5555555555",
                 "id": 33
             },
-            "ts": 20151023140416,
+            "ts": 20151023140416,   // yyyyMMddHHmmSS format
             "event_props": {
                 "value": "pizza"
             },
@@ -42,7 +42,7 @@
             },
             "session_props": {
                 "session_source": "Others",
-                "session_referrer": "http://example.com"
+                "session_referrer": "http://example.com"    // referrer is present if session source is others
             }
         }
     ]
