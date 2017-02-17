@@ -42,7 +42,7 @@
             },
             "session_props": {
                 "session_source": "Others",
-                "session_referrer": "http://example.com"    // referrer is present if session source is others
+                "session_referrer": "http://example.com"
             }
         }
     ]
