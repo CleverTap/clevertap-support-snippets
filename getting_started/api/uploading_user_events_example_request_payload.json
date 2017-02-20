@@ -9,7 +9,7 @@
                 "Product name": "Casio Chronograph Watch",
                 "Category": "Mens Watch",
                 "Price": 59.99,
-                "Currency": "USD"
+                "Currency": "USD",
             }
         },
         {
@@ -21,6 +21,7 @@
                 "Amount": 300,
                 "Currency": "USD",
                 "Payment mode": "Credit Card",
+                "Delivery By": "D_1487576752",      // UNIX epoch timestamp with $D_ prefix for recording date properties (string)
                 "Items": [
                     {
                         "Category": "books",
