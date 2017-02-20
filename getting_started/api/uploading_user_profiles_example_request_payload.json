@@ -12,7 +12,7 @@
         "Employed": "Y",
         "Education": "Graduate",
         "Married": "Y",
-        "Age": 28,
+        "DOB": "$D_1487576752",    // UNIX epoch timestamp with $D_ prefix for recording date properties (string)
         "Customer Type": "Platinum"
       }
     }
