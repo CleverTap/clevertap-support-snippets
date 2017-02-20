@@ -21,7 +21,7 @@
                 "Amount": 300,
                 "Currency": "USD",
                 "Payment mode": "Credit Card",
-                "Delivery By": "D_1487576752",      // UNIX epoch timestamp with $D_ prefix for recording date properties (string)
+                "Delivery By": "$D_1468322268",      // UNIX epoch timestamp with $D_ prefix for recording date properties (string)
                 "Items": [
                     {
                         "Category": "books",
