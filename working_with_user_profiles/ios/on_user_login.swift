@@ -4,7 +4,7 @@ let profile: Dictionary<String, AnyObject> = [
     "Name": "Jack Montana",       // String
     "Identity": 61026032,         // String or number
     "Email": "jack@gmail.com",    // Email address of the user
-    "Phone": 4155551234,          // Phone (without the country code)
+    "Phone": "+14155551234",      // Phone (with the country code, starting with +)
     "Gender": "M",                // Can be either M or F
     "Employed": "Y",              // Can be either Y or N
     "Education": "Graduate",      // Can be either School, College or Graduate
