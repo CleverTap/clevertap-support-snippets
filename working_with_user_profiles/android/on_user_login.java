@@ -4,7 +4,7 @@ HashMap<String, Object> profileUpdate = new HashMap<String, Object>();
 profileUpdate.put("Name", "Jack Montana");    // String
 profileUpdate.put("Identity", 61026032);      // String or number
 profileUpdate.put("Email", "jack@gmail.com"); // Email address of the user
-profileUpdate.put("Phone", 4155551234);       // Phone (without the country code)
+profileUpdate.put("Phone", "+14155551234");   // Phone (with the country code, starting with +)
 profileUpdate.put("Gender", "M");             // Can be either M or F
 profileUpdate.put("Employed", "Y");           // Can be either Y or N
 profileUpdate.put("Education", "Graduate");   // Can be either Graduate, College or School
