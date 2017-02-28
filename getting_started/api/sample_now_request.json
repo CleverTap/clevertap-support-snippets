@@ -1,8 +1,8 @@
 {
-	"user_type": true, 	// to get breakdown by user type
-	"session_source": true,	// to get breakdown by session source
-	"browser": true,	// to get breakdown by user browser
-	"os": true,		// to get breakdown by user OS
-	"device": true,		// to get breakdown by user device
-	"new": true		// to get the above breakdown(s) separately for new users
+	"user_type": true,
+	"session_source": true,
+	"browser": true,
+	"os": true,
+	"device": true,
+	"new": true
 }
