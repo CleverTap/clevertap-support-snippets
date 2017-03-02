@@ -1,0 +1,34 @@
+<style>
+  /* Caution: 'CT_Box' class is responsible for providing container, please don't remove it. */
+  .CT_Box {
+    background-color: #1e2e41;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  
+  .title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+</style>
+
+
+
+
+
+<div class="title">
+  New CleverTap Web Pop Ups are awesome, so are you!
+</div>
+<div class="description">
+  Now add iframes, gifs, google fonts and more.
+</div>
+<iframe src="//giphy.com/embed/JVdF14CQQH7gs" width="100%" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
