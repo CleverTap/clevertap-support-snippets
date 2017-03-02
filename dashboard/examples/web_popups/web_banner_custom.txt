@@ -1,0 +1,27 @@
+<style>
+   /* Caution: 'CT_Banner' class is responsible for providing container, please don't remove it. */
+  .CT_Banner {
+    background-color: #04bf94;
+    color: #fff;
+  }
+  
+  .btn {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #f2904d;
+    border: dashed 1px #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+  }
+
+</style>
+
+
+
+  <div class="title">
+    We are celebrating summer, you should too! Get flat 30% off this March.
+  </div>
+
+  <a class="btn" href="https://greatdealsonplanet.co?deal=off50" target="_blank">Coupon: MAR30</a>
