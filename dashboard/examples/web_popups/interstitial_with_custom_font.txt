@@ -1,0 +1,38 @@
+<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+<style>
+  /* Caution: 'CT_Interstitial' class is responsible for providing container, please don't remove it. */
+  
+  .CT_Interstitial {
+    font-family: 'Monda', sans-serif;
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #e23f22;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  
+  .highlight {
+    color: #e23f22;
+  }
+
+</style>
+
+
+<h3>
+Looking for #pizzalicious pizza in the town?
+</h3>
+
+<img src="https://images.unsplash.com/photo-1453831210728-695502f9f795?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=900&amp;q=80&amp;cs=tinysrgb&amp;crop=" width="80%">
+
+<p>
+  We offer best pizza in <span class="highlight">San Francisco</span>. Your first pizza on us.
+</p>
+
+<a href="/order.html" class="btn">Coupon: MYFIRST </a>
