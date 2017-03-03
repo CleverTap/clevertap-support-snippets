@@ -1,0 +1,12 @@
+{
+    "d": [
+        {
+            "type": "token",
+            "tokenData": {
+                "id": <Device Token>,
+                "type": apns/gcm/fcm/wns/mpns
+            },
+            "objectId": <ClevertapId/GUID>
+        }
+    ]
+}
