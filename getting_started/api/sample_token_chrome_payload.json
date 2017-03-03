@@ -1,0 +1,12 @@
+{
+    "type": "token",
+    "tokenData": {
+        "id": <DeviceToken>,
+        "type": "chrome",
+        "keys": {
+            "p256dh": <>,
+            "auth": <>
+        }
+    },
+    "objectId": <ClevertapId/GUID>
+}
