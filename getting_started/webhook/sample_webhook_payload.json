@@ -1,9 +1,9 @@
 {
     "targetId": 1472124953,
     "key_values": {
-                    "PromoCode": "MT50",
-                    "PowerUser": "true"
-                },
+        "PromoCode": "MT50",
+        "PowerUser": "true"
+    },
     "profiles": [
         {
             "email": "jack@gmail.com",
@@ -14,10 +14,10 @@
                 "High Score": 308,
                 "Replayed": true
             },
-            "event_properties" : {
-                "Score" : 1200 , 
-                "Game Mode" : "Practice" ,
-                "Rating" : 1
+            "event_properties": {
+                "Score": 1200,
+                "Game Mode": "Practice",
+                "Rating": 1
             },
             "push_token": "19403aa5d3bb376769a8101c9cbf22159cb1836117659cc684a71243589982ea"
         },
@@ -30,10 +30,10 @@
                 "High Score": 309,
                 "Replayed": true
             },
-              "event_properties" : {
-                "Score" : 500 , 
-                "Game Mode" : "Tournament" ,
-                "Rating" : 2
+            "event_properties": {
+                "Score": 500,
+                "Game Mode": "Tournament",
+                "Rating": 2
             },
             "push_token": "fiCjRO_opjw:APA91bH0yzS_eBj1Xx8TcakMzz4yTc3id29A79GOjnaaMtIQLrjztNfzzRz7slqWmNzndECx_hHh7qiL0LZJOkGwzr9Zp_g1mC9B6BVuEbsjrMFoxXX830zMRuvxtU_AhFTC0JPHejZh"
         }
