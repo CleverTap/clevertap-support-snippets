@@ -12,6 +12,8 @@ clevertap.profile.push({
    "Married": "Y",                          // Can be either Y or N
    "DOB": new Date(), // Date of Birth. Javascript Date object
    "Age": 28,                               // Not required if DOB is set
+   "Tz": "Asia/Kolkata",                    //an abbreviation such as "PST", a full name such as "America/Los_Angeles", 
+                                            //or a custom ID such as "GMT-8:00"
    "Photo": 'www.foobar.com/image.jpeg',    // URL to the Image
 
 // optional fields. controls whether the user will be sent email, push etc.
