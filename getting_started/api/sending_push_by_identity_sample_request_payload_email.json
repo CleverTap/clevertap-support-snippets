@@ -23,6 +23,7 @@
     "respect_frequency_caps": false,
     "content": {
         "subject": "Welcome",
-        "body": "<div>Your HTML content for the email</div>"
+        "body": "<div>Your HTML content for the email</div>",
+        "sender_name": "CleverTap"
     }
 }
