@@ -1,0 +1,9 @@
+@Override
+protected void onNewIntent(Intent intent) {
+     try {
+         CleverTapAPI.getInstance(this).event.pushNotificationEvent(intent.getExtras());
+     } catch (Throwable t) {
+         t.printStackTrace();
+     }
+     super.onNewIntent(intent);
+}
