@@ -1,4 +1,4 @@
-{
+ {
     "name": "My API Campaign",
     "estimate_only": true,
     "where": {
@@ -8,7 +8,8 @@
         "common_profile_properties": {
             "profile_fields": [
                 {
-                    "Key": "Customer Type",
+                    "name": "Customer Type",
+                    "operator":"equals",
                     "value": "Platinum"
                 }
             ]
