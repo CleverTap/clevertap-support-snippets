@@ -1,0 +1,231 @@
+<style>
+    .CT_Box {
+        background-color: #ffffff;
+    }
+    
+    form {
+        margin-bottom: 0;
+    }
+    /* START close button */
+    
+    .rating-widget__close {
+        color: #ccc;
+        font-size: 23px;
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    .rating-widget__close:hover {
+        color: #969696;
+    }
+    /* End close button */
+    
+    .rating-widget {
+        padding: 0 20px 20px;
+        text-align: left; /* use 'center' to make it in the center */
+        clear: both;
+    }
+    
+    .rating-widget__title {
+        font-size: 15px;
+    }
+    /* START submit button */
+    
+    .rating-widget__btn {
+        display: block;
+        background-color: #fc961d; /*change background color*/
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 18px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        border: 0;
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    .rating-widget__btn[disabled] {
+        opacity: 0.45;
+    }
+    /* END submit button */
+    
+    .rating-widget__rates {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .rating-widget__rates .rating-widget_star {
+        padding: 0 6px;
+        position: relative;
+    }
+    /* START thank you container */
+    
+    .rating-widget__thankyou {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* END thank you container */
+    /* START animation helpers */
+    
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            display: block;
+        }
+    }
+    
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn .5s ease-in 1 forwards;
+    }
+    
+    .is-paused {
+        animation-play-state: paused;
+        display: none;
+    }
+    /* END animation helpers */
+    /* START star colors */
+    
+    /*default style */
+    .isDefaultStar {
+        stroke: #D8D8D8;
+        fill: #D8D8D8;
+    }
+    
+    /*selected style*/
+    .isSelectedStar {
+        stroke: #F5C134;
+        fill: #F5C134;
+    }
+    /* END star colors */
+</style>
+
+<form id="rating-form">
+    <div class="rating-widget__close js-widget-close">&times;</div>
+    <div class="rating-widget">
+        <div class="js-ratingActions">
+            <div class="rating-widget__title">Rate your shopping experience</div>
+            <!-- Your title goes here -->
+            <div class="rating-widget__rates">
+                <!-- START SVG stars-->
+                <svg class="rating-widget_star isDefaultStar" data-idx="0" height="24px" version="1.1" viewbox="0 0 20 19" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polygon points="10 14.5000002 4.12214748 18.0901699 5.72024551 11.3905765 0.489434837 6.90983006 7.35496626 6.35942338 10 0 12.6450337 6.35942338 19.5105652 6.90983006 14.2797545 11.3905765 15.8778525 18.0901699"></polygon>
+        </svg>
+                <svg class="rating-widget_star isDefaultStar" data-idx="1" height="24px" version="1.1" viewbox="0 0 20 19" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polygon points="10 14.5000002 4.12214748 18.0901699 5.72024551 11.3905765 0.489434837 6.90983006 7.35496626 6.35942338 10 0 12.6450337 6.35942338 19.5105652 6.90983006 14.2797545 11.3905765 15.8778525 18.0901699"></polygon>
+        </svg>
+                <svg class="rating-widget_star isDefaultStar" data-idx="2" height="24px" version="1.1" viewbox="0 0 20 19" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polygon points="10 14.5000002 4.12214748 18.0901699 5.72024551 11.3905765 0.489434837 6.90983006 7.35496626 6.35942338 10 0 12.6450337 6.35942338 19.5105652 6.90983006 14.2797545 11.3905765 15.8778525 18.0901699"></polygon>
+        </svg>
+                <svg class="rating-widget_star isDefaultStar" data-idx="3" height="24px" version="1.1" viewbox="0 0 20 19" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polygon points="10 14.5000002 4.12214748 18.0901699 5.72024551 11.3905765 0.489434837 6.90983006 7.35496626 6.35942338 10 0 12.6450337 6.35942338 19.5105652 6.90983006 14.2797545 11.3905765 15.8778525 18.0901699"></polygon>
+        </svg>
+                <svg class="rating-widget_star isDefaultStar" data-idx="4" height="24px" version="1.1" viewbox="0 0 20 19" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <polygon points="10 14.5000002 4.12214748 18.0901699 5.72024551 11.3905765 0.489434837 6.90983006 7.35496626 6.35942338 10 0 12.6450337 6.35942338 19.5105652 6.90983006 14.2797545 11.3905765 15.8778525 18.0901699"></polygon>
+        </svg>
+                <!-- END SVG stars-->
+            </div>
+            <!-- Submit button text goes here -->
+            <button class="rating-widget__btn" disabled="disabled" type="submit">Submit rating</button>
+        </div>
+        <!-- Thank you message (Post submission message goes here) -->
+        <div class="rating-widget__thankyou js-ratingThankYou fade-in is-paused">We appreciate your feedback. Thank you.</div>
+    </div>
+</form>
+
+
+<script>
+    
+    (function() {
+        //grab all elements to use it later in the code
+    var stars = Array.prototype.slice.call(document.querySelectorAll('.rating-widget_star'));
+    var form = document.getElementById('rating-form');
+    var closeBtn = document.querySelector('.js-widget-close');
+    var mainContainer = window.parent.document.getElementById('wizParDiv0');
+    var iframe = window.parent.document.getElementById('wiz-iframe');
+    var actualRating;
+    mainContainer.style.overflow = "initial";
+    
+    //style for iframe
+    iframe.style.borderRadius = "4px";
+    iframe.style.boxShadow = "rgba(0, 0, 0, 0.3) 0px 0px 5px 0px";
+
+    //helper function to remove 'isSelectedStar' from all stars
+    var removeSelectedStars = function(stars) {
+        stars.forEach(function(elem) {
+            elem.classList.remove('isSelectedStar');
+            elem.classList.add('isDefaultStar');
+        });
+    }
+    
+    var toggleStars = function(stars, idx) {
+        removeSelectedStars(stars);
+        stars.slice(0, idx).forEach(function(elem) {
+            elem.classList.remove('isDefaultStar');
+            elem.classList.add('isSelectedStar');
+        });
+        
+        document.querySelector('.rating-widget__btn').removeAttribute('disabled');
+    }
+    
+    //call when click registers on any star svg
+    var handleStars = function(e) {
+        if (e.target.parentNode.classList.contains('rating-widget_star') || e.target.classList.contains('rating-widget_star')) {
+            actualRating = parseInt(e.target.parentNode.dataset.idx || e.target.dataset.idx)+1;
+            toggleStars(stars, actualRating);
+        }
+    }
+    
+    //helper function to show/hide elements
+    var toggleUI = function(hidingElem, ShowingElem) {
+        document.querySelector(hidingElem).style.display = 'none';
+        var showElem = document.querySelector(ShowingElem);
+        if (showElem.classList.contains('is-paused')) {
+            showElem.classList.remove('is-paused');
+        }
+    }
+    
+    //send data to CleverTap [change the event name and event property]
+    var sendData = function(actualRating) {
+        window.parent.clevertap.event.push("Shopping rating", {
+            "Rating": actualRating,
+            "Page Title": window.parent.document.title
+        });
+    }
+    
+    //close CleverTap popup
+    var closeWidget = function() {
+        mainContainer.remove();
+    }
+
+    //add click listener to all star svgs
+    stars.forEach(function(element) {
+        element.addEventListener('click', handleStars);
+    });
+    
+    //final rating variable to send along with CleverTap event
+    var actualRating = 0;
+
+    form.addEventListener('submit', function(e) {
+        var afterHeight
+        e.preventDefault();
+        sendData(actualRating); //to send data to clevertap
+        
+        toggleUI('.js-ratingActions', '.js-ratingThankYou');
+        
+        //change height of iframe once we submit form
+        afterHeight = document.getElementById('rating-form').offsetHeight;
+        iframe.style.height = afterHeight + "px";
+        
+        setTimeout(closeWidget, 1500); // hide popup after 1500 ms (remove this line to keep popup)
+    });
+        
+    closeBtn.addEventListener('click', closeWidget);
+        
+    })();
+    
+    
+</script>
