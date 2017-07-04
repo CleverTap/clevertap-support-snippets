@@ -12,7 +12,7 @@
         "Employed": "Y",
         "Education": "Graduate",
         "Married": "Y",
-        "MSG-sms": false
+        "MSG-sms": false,
         "DOB": "$D_1487576752",    // UNIX epoch timestamp with $D_ prefix for recording date properties (string)
         "Customer Type": "Platinum"
       }
