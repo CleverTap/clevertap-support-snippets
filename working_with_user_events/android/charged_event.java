@@ -13,7 +13,7 @@ item2.put("Product category", "books");
 item2.put("Book name", "Achieving inner zen");
 item2.put("Quantity", 1);
 
-HashMap<String, Object> book3 = new HashMap<String, Object>();
+HashMap<String, Object> item3 = new HashMap<String, Object>();
 item3.put("Product category", "books");
 item3.put("Book name", "Chuck it, let's do it");
 item3.put("Quantity", 5);
