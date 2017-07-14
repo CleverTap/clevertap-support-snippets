@@ -4,6 +4,6 @@
     android:theme="@android:style/Theme.Translucent.NoTitleBar"
     android:configChanges="orientation|keyboardHidden"/>
 
-< meta-data
+<meta-data
     android:name="CLEVERTAP_INAPP_EXCLUDE"
-    android:value="YourSplashActivity1, YourSplashActivity2"/> 
+    android:value="YourSplashActivity1, YourSplashActivity2" /> 
