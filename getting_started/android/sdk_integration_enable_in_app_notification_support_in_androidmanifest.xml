@@ -4,7 +4,6 @@
     android:theme="@android:style/Theme.Translucent.NoTitleBar"
     android:configChanges="orientation|keyboardHidden"/>
 
-<!-- uncomment below block to ensure in-app notification isn't shown on a splash screen -->
-<!-- meta-data
+< meta-data
     android:name="CLEVERTAP_INAPP_EXCLUDE"
-    android:value="SplashActivity1, SplashActivity2"/ --> 
+    android:value="YourSplashActivity1, YourSplashActivity2"/> 
