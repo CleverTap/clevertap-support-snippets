@@ -1,0 +1,2 @@
+clevertap = CleverTapAPI.getInstance(getApplicationContext());
+clevertap.updateLocation(location); //android.location.Location
