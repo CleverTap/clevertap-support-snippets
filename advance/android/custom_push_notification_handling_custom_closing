@@ -1,0 +1,16 @@
+Bundle extras = intent.getExtras();
+if (extras != null) {
+    String actionId = extras.getString("actionId");
+    if (actionId != null) {
+        Log.d("ACTION_ID", actionId);
+        boolean autoCancel = extras.getBoolean("autoCancel", true);
+        int notificationId = extras.getInt("notificationId", -1);
+        if (autoCancel && notificationId > -1) {
+            NotificationManager notifyMgr =
+                    (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
+            notifyMgr.cancel(notificationId);  // the bit that cancels the notification
+        }
+        Toast.makeText(getBaseContext(),"Action ID is: "+actionId,
+                Toast.LENGTH_SHORT).show();
+    }
+}
