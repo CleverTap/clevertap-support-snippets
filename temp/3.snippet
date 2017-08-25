@@ -1,0 +1,73 @@
+#import <Foundation/Foundation.h>
+
+
+/* ------------------------------------------------------------------------------------------------------
+ * Push Notifications History API
+ */
+
+/*!
+ * Maintains an in-memory and on-disk history of the last N (configurable in the CleverTap Dashboard, defaults to 100)
+ * push notifications generated for this user.
+ * Data is updated on application launch and also via a manual API call (see below).
+ * When there are new notifications, CleverTap will post an NSNotification, named CTNotificationsUpdatedNotification.
+ * Receipt of the notification will indicate that there are new notification messages available for this user.
+ *
+ * To listen for the NSNotification, register an object as an observer of the notification:
+ *
+ * <pre>
+ *   [[NSNotificationCenter defaultCenter] addObserver:self
+ *                                            selector:@selector(notificationsUpdated:)
+ *                                                name:CTNotificationsUpdatedNotification
+ *                                              object:nil];
+ * </pre>
+ *
+ * where "notificationsUpdated:" is your callback method:
+ *
+ * <pre>
+ *   - (void)notificationsUpdated:(NSNotification *)notification {
+ *     < Do something, e.g. make an API call to get the number of new notifications or to fetch an updated notifications data array>
+ *   }
+ * </pre>
+ */
+
+NS_ASSUME_NONNULL_BEGIN
+extern NSString *const CTNotificationsUpdatedNotification;
+
+
+@interface CleverTapNotificationsManager : NSObject
+
+/*!
+ * The NSDate object representing the last time the notifications data was updated from the CleverTap server.
+ */
+@property (readonly, nullable) NSDate *lastUpdated;
+
+/*!
+ * Returns the number of unread notifications.
+ * Once retrieved from the getNotifications API a notification is marked as read.
+ */
+- (NSInteger)unreadCount;
+
+/*!
+ * Returns the number of new notifications received since the previous update.
+ */
+- (NSInteger)newCount;
+
+/*!
+ * Returns the total number of notifications.
+ *
+ */
+- (NSInteger)totalCount;
+
+/*!
+ * Returns an NSArray containing all the maintained notification payloads.
+ * The data format mirrors the structure of the APNS payload format.
+ */
+- (NSArray<NSDictionary *> *)getNotifications;
+
+/*!
+ * Manually refresh the notifications data from the CleverTap server.
+ */
+- (void)refreshNotifications;
+
+@end
+NS_ASSUME_NONNULL_END
