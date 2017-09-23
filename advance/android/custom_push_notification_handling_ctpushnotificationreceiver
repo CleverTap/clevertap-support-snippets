@@ -1,0 +1,5 @@
+<receiver
+    android:name="com.clevertap.android.sdk.CTPushNotificationReceiver"
+    android:exported="false"
+    android:enabled="true">
+</receiver>
