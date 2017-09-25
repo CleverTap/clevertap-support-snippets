@@ -8,7 +8,7 @@
      
      If you do not implement this method, your app never responds to custom actions.
      
-     see https://developer.apple.com/reference/usernotifications/unusernotificationcenterdelegate/1649501-usernotificationcenter
+     see https://developer.apple.com/reference/usernotifications/unusernotificationcenterdelegate/1649501-usernotificationcenter?language=objc
      **/
 
     // if you wish CleverTap to record the notification open and fire any deep links contained in the payload
