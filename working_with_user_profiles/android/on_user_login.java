@@ -17,4 +17,13 @@ profileUpdate.put("MSG-email", false);        // Disable email notifications
 profileUpdate.put("MSG-push", true);          // Enable push notifications
 profileUpdate.put("MSG-sms", false);          // Disable SMS notifications
 
+ArrayList<String> stuff = new ArrayList<String>();
+stuff.add("bag");
+stuff.add("shoes");
+profileUpdate.put("MyStuff", stuff);                        //ArrayList of Strings
+
+String[] otherStuff = {"Jeans","Perfume"};
+profileUpdate.put("MyStuff", otherStuff);                   //String Array
+
+
 CleverTapAPI.getInstance(getApplicationContext()).onUserLogin(profileUpdate);
