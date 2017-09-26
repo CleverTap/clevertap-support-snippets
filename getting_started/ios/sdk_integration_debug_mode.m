@@ -1,12 +1,5 @@
-#ifdef INFO
- [CleverTap setDebugLevel: CleverTapLogInfo];
-#endif
-
 #ifdef DEBUG
-[CleverTap setDebugLevel: CleverTapLogDebug];
+   [CleverTap setDebugLevel:CleverTapLogDebug];
+#else
+   [CleverTap setDebugLevel:CleverTapLogOff];
 #endif
-
-#ifdef OFF
-[CleverTap setDebugLevel: CleverTapLogOff];
-#endif
-
