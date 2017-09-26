@@ -15,6 +15,7 @@
             ]
         }
     },
+    "respect_frequency_caps": false,
     "content": {
         "title": "Hi!",
         "body": "How are you doing today?",
