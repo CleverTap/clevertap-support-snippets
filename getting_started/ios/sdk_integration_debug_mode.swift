@@ -1,3 +1,5 @@
-CleverTap.setDebugLevel(CleverTapLogLevel.info.rawValue)
-CleverTap.setDebugLevel(CleverTapLogLevel.debug.rawValue)
-CleverTap.setDebugLevel(CleverTapLogLevel.off.rawValue)
+ #if DEBUG
+    CleverTap.setDebugLevel(CleverTapLogLevel.debug.rawValue)
+#else
+    CleverTap.setDebugLevel(CleverTapLogLevel.off.rawValue)
+#endif
