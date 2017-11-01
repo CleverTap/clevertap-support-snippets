@@ -1,6 +1,6 @@
 dependencies {
     compile 'com.clevertap.android:clevertap-android-sdk:3.1.7'
-    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    compile 'com.google.android.gms:play-services-gcm:11.4.0'
     compile 'com.google.android.gms:play-services-base:11.4.0'
     compile 'com.android.support:support-v4:23.1.1'
 }
