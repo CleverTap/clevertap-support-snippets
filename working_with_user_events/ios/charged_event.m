@@ -1,7 +1,7 @@
 NSDictionary *chargeDetails = @{
    @"Amount" : @300,
    @"Payment mode": @"Credit Card",
-   @"Charged ID": @24052013 // important to avoid duplicate transactions due to network failure
+   @"Charged ID": @24052013 
 };
 
 NSDictionary *item1 = @{
