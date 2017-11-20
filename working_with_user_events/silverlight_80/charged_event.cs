@@ -2,7 +2,7 @@ Dictionary<string, object> chargeDetails = new Dictionary<string, object>();
 chargeDetails.Add("Amount", 300);
 chargeDetails.Add("Currency", "USD");
 chargeDetails.Add("Payment mode", "Credit card");
-chargeDetails.Add("Charged ID", 24052013); // important to avoid duplicate transactions due to network failure
+chargeDetails.Add("Charged ID", 24052013);
 
 Dictionary<string, object> item1 = new Dictionary<string, object>();
 item1.Add("Category", "books");
