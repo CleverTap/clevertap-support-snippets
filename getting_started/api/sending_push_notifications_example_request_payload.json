@@ -1,6 +1,7 @@
  {
     "name": "My API Campaign",
     "estimate_only": true,
+    "target_mode":"push"
     "where": {
         "event_name": "App Launched",
         "from": 20150101,
