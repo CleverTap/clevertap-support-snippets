@@ -1,0 +1,37 @@
+{
+    "name": "My Webpush API campaign",
+    "estimate_only": true,
+    "target_mode":"webpush",
+    "where": {
+        "event_name": "Charged",
+        "from": 20171001,
+        "to": 20171220, 
+      "common_profile_properties": {
+            "profile_fields": [
+                {
+                    "name": "Customer Type",
+                    "operator":"equals",
+                    "value": "Platinum"
+                }
+            ]
+        }
+    },
+    "respect_frequency_caps": false,
+    "content": {
+        "title": "Hi!",
+        "body": "How are you doing today?",
+        "platform_specific": {
+            "chrome": {
+              "image": "https://www.exampleImage.com",
+              "icon":"https://www.exampleIcon.com",
+              "deep_link": "http://www.example.com",
+              "ttl":10,
+              "require_interaction":true,
+              "cta_title1":"title",
+              "cta_link1":"http://www.example2.com",
+              "cta_iconlink1":"https://www.exampleIcon2.com"
+            }
+        }
+    },
+    "when": "now"
+}
