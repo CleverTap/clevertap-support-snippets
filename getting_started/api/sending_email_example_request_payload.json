@@ -1,0 +1,26 @@
+{
+    "name": "My Email API campaign",
+    "estimate_only": true,
+    "target_mode":"email",
+    "where": {
+        "event_name": "Charged",
+        "from": 20171001,
+        "to": 20171220, 
+      "common_profile_properties": {
+            "profile_fields": [
+                {
+                    "name": "Customer Type",
+                    "operator":"equals",
+                    "value": "Platinum"
+                }
+            ]
+        }
+    },
+    "respect_frequency_caps": false,
+    "content": {
+        "subject": "Welcome",
+        "body": "<div>Your HTML content for the email</div>",
+        "sender_name": "CleverTap"
+    },
+    "when": "now"
+}
