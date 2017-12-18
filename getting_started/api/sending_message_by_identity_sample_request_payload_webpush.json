@@ -1,0 +1,40 @@
+{
+    "to": {
+        "FBID": [
+            "102029292929388",
+            "114342342453463"
+        ],
+        "GPID": [
+            "1928288389299292"
+        ],
+        "Email": [
+            "john@doe.com",
+            "jane@doe.com"
+        ],
+        "Identity": [
+            "JohnDoe"
+        ],
+        "objectId": [
+            "_asdnkansdjknaskdjnasjkndja",
+            "-adffajjdfoaiaefiohnefwprjf"
+        ]
+    },
+    "tag_group": "my tag group",
+    "respect_frequency_caps": false,
+     "content": {
+        "title": "Hi!",
+        "body": "How are you doing today?",
+        "platform_specific": {
+            "chrome": {
+                "image": "https://www.exampleImage.com",
+              "icon":"https://www.exampleIcon.com",
+                "deep_link": "http://www.example.com",
+              "ttl":10,
+              "require_interaction":true,
+              "cta_title1":"title",
+              "cta_link1":"http://www.example2.com",
+              "cta_iconlink1":"https://www.exampleIcon2.com"
+            }
+        }
+    }
+}
