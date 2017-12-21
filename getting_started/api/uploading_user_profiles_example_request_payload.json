@@ -2,7 +2,6 @@
   "d": [
     {
       "identity": "1189549",  // customer ID, email or any other ID that uniquely identifies your user
-      "ts": 1468308340,       // user creation date, or just leave this field out to set the time has current
       "type": "profile",
       "profileData": {
         "Name": "Jack Montana",
