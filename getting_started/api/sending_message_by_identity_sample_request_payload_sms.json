@@ -20,6 +20,7 @@
         ]
     },
     "tag_group": "my tag group",
+    "provider_nick_name" : "Provider 1",
     "respect_frequency_caps": false,
      "content": {
         "body": "Sms body"
