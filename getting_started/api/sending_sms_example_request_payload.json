@@ -3,6 +3,7 @@
     "name": "My Sms API campaign",
     "estimate_only": true,
     "target_mode":"sms",
+    "provider_nick_name" : "Provider 1",
     "where": {
         "event_name": "Charged",
         "from": 20171001,
