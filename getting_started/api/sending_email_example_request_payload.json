@@ -2,6 +2,7 @@
     "name": "My Email API campaign",
     "estimate_only": true,
     "target_mode":"email",
+    "provider_nick_name" : "Provider 1",
     "where": {
         "event_name": "Charged",
         "from": 20171001,
