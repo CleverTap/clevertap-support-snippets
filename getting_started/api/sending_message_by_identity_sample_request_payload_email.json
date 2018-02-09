@@ -21,6 +21,7 @@
     },
     "tag_group": "my tag group",
     "respect_frequency_caps": false,
+    "provider_nick_name" : "Provider 1",
     "content": {
         "subject": "Welcome",
         "body": "<div>Your HTML content for the email</div>",
