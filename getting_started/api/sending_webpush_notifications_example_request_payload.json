@@ -2,6 +2,7 @@
     "name": "My Webpush API campaign",
     "estimate_only": true,
     "target_mode":"webpush",
+    "labels":["onboarding"],
     "where": {
         "event_name": "Charged",
         "from": 20171001,
