@@ -4,6 +4,7 @@
     "estimate_only": true,
     "target_mode":"sms",
     "provider_nick_name" : "Provider 1",
+    "labels":["onboarding","marketing"],
     "where": {
         "event_name": "Charged",
         "from": 20171001,
