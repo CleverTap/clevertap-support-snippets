@@ -9,16 +9,6 @@
             "value": 100
         }
     ],
-    "session_properties": [
-        {
-            "name": "session_source",
-            "operator": "equals",
-            "value": [
-                "Email",
-                "Search"
-            ]
-        }
-    ],
     "common_profile_properties": {
         "profile_fields": [
             {
