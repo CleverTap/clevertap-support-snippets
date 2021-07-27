@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">:root {
+    --body_colour : white;
+    --star_color: gold;
+    --button_color: plum; 
+    --button_text_colour : white;
+}
+    body{
+        background-color:var(--body_colour);
+    }
+    .container{
+      text-align:center;
+      margin-top:15px;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+      font-weight: 100;
+      position:relative;
+    }
+    .star-rating{
+                direction:rtl;
+            }
+      .star-rating input{
+                display: none;
+            }
+      .star-rating label{
+                display:inline-block;
+                width: 45px;
+                position: relative;
+                cursor: pointer;
+        	    text-align:center;
+            }
+            .star-rating label::before{
+                content: "\2606";
+                color: var(--star_color);
+              	border:1px;
+                position: absolute;
+                font-size: 60px;
+                display: inline-block;
+                top:0;
+                left: 0;
+            }
+            .star-rating label::after{
+                content: "\2605";
+                color:var(--star_color);
+                position: absolute;
+                font-size: 60px;
+                display: inline-block;
+                top:0;
+                left: 0;
+                opacity: 0;
+            }
+            .star-rating label:hover:after,
+            .star-rating label:hover ~ label:after,
+            .star-rating input:checked ~ label:after{
+                opacity: 1;
+            }
+            .Done{
+                width:130px;
+                height: 45px;
+                border-radius: 20px;
+                border-color:var(--button_color);
+                background: var(--button_color);
+                color:var(--button_text_colour);
+                font-size:18px;
+                margin-top:100px;
+
+            }
+	</style>
+	<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+</head>
+<body>
+<div class="container"><label>How would you like to rate your experience?</label></div>
+
+<div class="star-rating" style="text-align:center;"><input id="star-1" name="rating" onclick="getRadioValue()" type="radio" value="5" /> <label class="star-rating" for="star-1"> </label> <input id="star-2" name="rating" onclick="getRadioValue()" type="radio" value="4" /> <label class="star-rating" for="star-2"> </label> <input id="star-3" name="rating" onclick="getRadioValue()" type="radio" value="3" /> <label class="star-rating" for="star-3"> </label> <input id="star-4" name="rating" onclick="getRadioValue()" type="radio" value="2" /> <label class="star-rating" for="star-4"> </label> <input id="star-5" name="rating" onclick="getRadioValue()" type="radio" value="1" /> <label class="star-rating" for="star-5"> </label></div>
+
+<div style="text-align: center;"><button class="btn Done" onclick="closeInapp()" type="submit">Done</button></div>
+<script>
+    let rating_value = 0;
+    function getRadioValue() {
+        var ele = document.getElementsByName('rating');
+        var review = document.getElementsByName('review');
+        var rating = 0 ;
+        for(i = 0; i < ele.length; i++) {
+            if(ele[i].checked){
+                //sample code to display value
+                /*document.getElementById("result").innerHTML
+                    = "Tell us a bit more about choosing  "+ele[i].value;*/
+                    rating_value =  ele[i].value;
+            }
+        }
+    }
+
+    function closeInapp(){
+    /*if (window.CleverTap) {            
+        CleverTap.pushEvent("Rated-star_1");          
+    }*/
+    var props = {rating: rating_value};
+    if (window.CleverTap) {
+       // Call Android interface             
+        CleverTap.pushEvent("Rated-star_1",JSON.stringify(props));
+    }
+    window.location.href = 'wzrk:/toexit';
+  }
+
+</script></body>
+</html>

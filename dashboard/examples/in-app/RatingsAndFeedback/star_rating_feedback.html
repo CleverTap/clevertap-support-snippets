@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">:root {
+    --body_colour : white;
+    --star_color: gold;
+    --review_box_colour : lightgray;
+    --button_color: plum; 
+    --button_text_colour : white;
+}
+    body{
+        background-color: var(--body_colour);
+      }
+      .container{
+      text-align:center;
+      margin-top:80px;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+      font-weight: 100
+    }
+    .star-rating{
+                direction:rtl;
+      			margin-top : 80px;
+            }
+      .star-rating input{
+                display: none;
+            }
+      .star-rating label{
+                display: inline-block;
+                width: 45px;
+                position: relative;
+        		padding:0px;
+                cursor: pointer;
+        	    text-align:center;
+            }
+            .star-rating label::before{
+                content: "\2606";
+                color: var(--star_color);
+                position: absolute;
+                font-size: 60px;
+                display: inline-block;
+                top:0;
+                left: 0;
+            }
+            .star-rating label::after{
+                content: "\2605";
+                color: var(--star_color);
+                position: absolute;
+                font-size: 60px;
+                display: inline-block;
+                top:0;
+                left: 0;
+                opacity: 0;
+            }
+            .star-rating label:hover:after,
+            .star-rating label:hover ~ label:after,
+            .star-rating input:checked ~ label:after{
+                opacity: 1;
+            }
+            .footer{
+                text-align:center;
+                margin-top:80px;
+                font-size: 18px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+                font-weight: 100
+            }
+            .rating-review{
+                text-align:center;
+                margin-top:10px;
+                display : block;
+            }
+            .write-review{
+                border-radius: 10px;
+                border-color: var(--review_box_colour);
+                height: 150px;
+                width: 270px;
+                outline-color: var(--review_box_colour);
+            }
+            .SubmitButton{
+                margin-top: 40px;
+                position: absolute;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                background-color: var(--button_color);
+                border-color: var(--button_color);
+                border-radius: 30px;
+                height:40px;
+                width: 250px;
+                color: var(--button_text_colour);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-size:18px;
+            }
+	</style>
+	<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+</head>
+<body>
+<div class="star-rating" style="text-align:center;"><input id="star-1" name="rating" onclick="displayRadioValue()" type="radio" value="5" /> <label class="star-rating" for="star-1"> </label> <input id="star-2" name="rating" onclick="displayRadioValue()" type="radio" value="4" /> <label class="star-rating" for="star-2"> </label> <input id="star-3" name="rating" onclick="displayRadioValue()" type="radio" value="3" /> <label class="star-rating" for="star-3"> </label> <input id="star-4" name="rating" onclick="displayRadioValue()" type="radio" value="2" /> <label class="star-rating" for="star-4"> </label> <input id="star-5" name="rating" onclick="displayRadioValue()" type="radio" value="1" /> <label class="star-rating" for="star-5"> </label></div>
+
+<div class="footer">
+<p id="result" style="color:black">Tell us a bit more about us </p>
+</div>
+
+<div class="rating-review" id="rating-review"><textarea class="write-review" cols="50" id="review" name="review" rows="4">    </textarea>
+
+<div><button class="SubmitButton" onclick="submit()" type="button">Submit</button></div>
+
+<div>
+<div><!--<div><p id="test" style="margin-top:300px;"></p></div>--></div>
+</div>
+</div>
+<script>
+    let rating_value = 0 ;
+    function displayRadioValue() {
+        var ele = document.getElementsByName('rating');
+        var review = document.getElementsByName('review');
+        for(i = 0; i < ele.length; i++) {
+            if(ele[i].checked){
+                document.getElementById("result").innerHTML
+                    = "Tell us a bit more about choosing  "+ele[i].value;
+               // document.getElementById("rating-review").style.display = "block";
+               rating_value = ele[i].value;
+            }
+        }
+    }
+
+    function submit(){
+        var op = document.getElementById("review").value;
+        var props = {rating: rating_value, feedback : op};
+        if (window.CleverTap) {
+            // Call Android interface             
+            CleverTap.pushEvent("Rated-star_2",JSON.stringify(props));
+        }
+        window.location.href = 'wzrk:/toexit';
+    }
+</script></body>
+</html>

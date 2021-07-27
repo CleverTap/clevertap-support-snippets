@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">:root {
+    --body_colour : white;
+    --opt_color: plum; 
+    --opt_text_color: plum;
+    --opt_text_afterSelect : black;
+    --button_color: plum;
+    --button1_text_color : plum;
+    --button2_text_color : white;
+
+}
+    body{
+        align-items: center;
+    }
+            .top-container{
+                text-align: center;
+                margin-top: 60px;
+            }
+            .container{
+                text-align: center;
+                height: 120px;
+                width: 300px;
+                margin-top: 25px;
+            }
+            .bottom-container{
+                margin-top: 180px;
+            }
+            .head-text{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 18px;
+                font-weight: 100px;
+            }
+            .sub-head{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 15px;
+                color: lightslategray;
+                font-weight: 100px;
+            }
+
+            .container input{
+                display: none;
+            }
+            #button{
+                margin-top: 20px;
+                border-color: var(--opt_color);
+                border-radius: 20px;
+                height: 45px;
+                font-size: 18px;
+            }   
+
+            .container label{
+                color: var(--opt_text_color);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 15px;
+            }
+
+            .Previous{
+                width:120px;
+                height: 45px;
+                border-radius: 20px;
+                background: transparent;
+                border-color: var(--button_color);
+                margin-right: 20px;
+                color: var(--button1_text_color);
+                font-size: 18px;
+            } 
+            .Done{
+                width:120px;
+                height: 45px;
+                border-radius: 20px;
+                background: transparent;
+                background: var(--button_color);
+                color:var(--button2_text_color);
+                font-size: 18px;
+
+            }
+	</style>
+	<script>
+
+    </script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+</head>
+<body>
+<div class="top-container">
+<p class="head-text">Help us help you.<br />
+What can we do better ?</p>
+
+<p class="sub-head">Select one or more options</p>
+</div>
+
+<div class="container"><label class="btn btn-block active" id="button"><input autocomplete="off" class="option" id="values" onclick="showactive()" type="checkbox" value="Wider product selection" /> Wider product selection </label> <label class="btn btn-block active" id="button"> <input autocomplete="off" class="option" id="values" onclick="showactive()" type="checkbox" value="More size offerings" /> More size offerings </label> <label class="btn btn-block active" id="button"> <input autocomplete="off" class="option" id="values" onclick="showactive()" type="checkbox" value="Better Shipping options" /> Better Shipping options </label> <label class="btn btn-block active" id="button"> <input autocomplete="off" class="option" id="values" onclick="showactive()" type="checkbox" value="Easier return and exchange" /> Easier return and exchange </label></div>
+
+<div class="col-md-12 text-center bottom-container"><button class="btn Previous" type="submit">Previous</button><button class="btn Done" onclick="Done()" type="submit">Done</button></div>
+<!--<p id="result" style="color:black"></p>--><script>
+    function showactive(){
+        var ele = document.getElementsByClassName("btn btn-block active");
+        var ele1= document.getElementsByClassName("option");
+        for(i = 0; i < ele.length; i++) {
+                    if(ele1[i].checked)
+                        {
+                            ele[i].style.backgroundColor="var(--opt_color)";
+                            ele[i].style.color = "var(--opt_text_afterSelect)";
+                        }
+                    }
+}
+function Done(){
+    let feedback = " ";
+    var ele = document.getElementsByClassName("btn btn-block active");
+      var ta= " ";
+        for(i = 0; i < ele.length; i++) {
+            var ele1= document.getElementsByClassName("option");
+            if(ele1[i].checked)
+                {
+                    feedback= ta+ ele1[i].value + ",";
+                    //console.log(feedback);
+                    ta= feedback;
+
+                }
+    }
+    var props = {feedback : feedback};
+    if (window.CleverTap) {  
+        CleverTap.pushEvent("Feedback_3",JSON.stringify(props));         
+    }
+    window.location.href = 'wzrk:/toexit';
+}
+</script></body>
+</html>
