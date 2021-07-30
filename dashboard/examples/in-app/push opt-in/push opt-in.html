@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" content="initial-scale=1.0" name="viewport" />
+<style type="text/css">.container{
+width:100%;
+height:70%;
+background-color:#ff471a;
+position: relative;
+text-align: center;
+border-radius:5%;
+font-family: Arial;
+}
+.heading{
+color: white;
+font-size:140%;
+position: relative;
+top:5%;
+font-weight: bolder;
+margin:5%;
+}
+.para{
+color: white;
+font-size:120%;
+margin:5%;
+position: relative;
+top:5%;
+text-align: center;
+}
+.btn{
+background-color:#cc3300;
+color:#FFFFFF;
+width:90%;
+height:15%;
+border: none;
+border-radius:10px;
+font-size:120%;
+position: relative;
+top:12%;
+margin:3%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h4 class="heading">GET PUSH ALERTS</h4>
+
+<p class="para">Enable Push notification to get alerts for major stories and topics you choose.</p>
+<button class="btn" onclick="opensettings()">Enable</button>
+
+
+<button class="btn" onclick="close()">Not now</button></div>
+
+<p> </p>
+<script>
+function opensettings() {
+var userAgent = window.navigator.userAgent,
+platform = window.navigator.platform,
+iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+os = null;
+
+if (iosPlatforms.indexOf(platform) !== -1) {
+window.location.href = "prefs:root=Settings";
+}
+else if (/Android/.test(userAgent)) {
+window.location.href = "myapp://opensettings";
+}
+}
+
+function close(){
+window.location.href = 'wzrk:/toexit';
+}</script>
+</body>
+</html>
